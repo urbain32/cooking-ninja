@@ -1,0 +1,30 @@
+.loader {
+  height: 40px;
+  transform-origin: bottom center;
+  animation: spinner 3s linear infinite;
+}
+.load {
+  display: inline-block;
+  background-color: #7248f3;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: load 1.5s linear infinite;
+  margin: -10px;
+}
+.load:nth-child(2) {
+  background-color: #ff94f0;
+  animation-delay: 0.8s;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+    50%{
+        transform: scale(1);
+    }
+}
