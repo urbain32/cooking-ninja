@@ -3,6 +3,7 @@
 /* base styles */
 html, body, #root {
   height: 100%;
+ 
 }
 body {
   font-family: Raleway, sans-serif;
